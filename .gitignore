@@ -1,0 +1,7 @@
+./venv
+./venv-gen-ai
+.env
+.venv
+.venv-gen-ai
+venv
+venv-gen-ai
