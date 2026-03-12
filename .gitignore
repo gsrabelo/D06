@@ -1,9 +1,5 @@
-./venv
-./venv-gen-ai
-.env
-.venv
-.venv-gen-ai
-venv
-venv-gen-ai
+venv/
+venv-gen-ai/
 .DS_Store
 __pycache__
+.env
