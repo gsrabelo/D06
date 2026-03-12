@@ -5,3 +5,5 @@
 .venv-gen-ai
 venv
 venv-gen-ai
+.DS_Store
+__pycache__
