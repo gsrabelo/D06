@@ -1,5 +1,20 @@
+<<<<<<< HEAD
 venv/
 venv-gen-ai/
 .DS_Store
 __pycache__
 .env
+=======
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+env-gen-ai/
+venv/
+venv-gen-ai/
+.DS_store
+__MACOSX/
+Thumbs.db
+>>>>>>> 621dd630b3882dd94bddb8a97af547c415dc099b

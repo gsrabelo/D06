@@ -6,6 +6,9 @@ import base64
 import re
 import json
 
+#rec_face = RecFacial(dlib_face_detector, dlib_face_predictor, obj_vllm)
+#coords, pontos = rec_face.obter_coordenadas_faces(img, force_upscale=True)
+
 class RecFacial:
 
     def __init__(self, dlib_face_detector, dlib_face_predictor, vllm):
@@ -32,7 +35,13 @@ class RecFacial:
             coords.append((int(x1/scale), int(y1/scale), int(x2/scale), int(y2/scale)))
             pontos.append(face_pts)
 
-        coords, pontos = zip(*sorted(zip(coords, pontos), key=lambda el: el[0]))
+        
+         # zip(*[]) falha ao tentar desempacotar iterador vazio em duas variáveis
+        if coords:
+            coords, pontos = zip(*sorted(zip(coords, pontos), key=lambda el: el[0]))
+            coords = list(coords)
+            pontos = list(pontos)"
+        #coords, pontos = zip(*sorted(zip(coords, pontos), key=lambda el: el[0]))
         return coords, pontos
 
 
