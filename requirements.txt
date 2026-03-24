@@ -1,0 +1,17 @@
+cmake
+wheel
+torch 
+torchvision 
+scikit-learn 
+scikit-image 
+matplotlib 
+timm
+fastapi 
+gradio 
+pydantic 
+ipython 
+jupyter 
+dlib-bin
+opencv-python 
+opencv-contrib-python
+vllm
